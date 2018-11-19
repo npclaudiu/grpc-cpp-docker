@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package calculator.proto;
+
+service Calculator {
+    rpc Compute(ComputeRequest) returns (ComputeResponse) {}
+}
+
+enum Operator {
+    ADD = 0;
+    SUB = 1;
+    MUL = 2;
+    DIV = 3;
+    POW = 4;
+}
+
+message ComputeRequest {
+    Operator operator = 1;
+    double lhs = 2;
+    double rhs = 3;
+}
+
+message ComputeResponse {
+    double result = 1;
+}

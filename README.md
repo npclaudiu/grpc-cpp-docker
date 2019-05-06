@@ -9,8 +9,8 @@ gRPC CXX image](https://hub.docker.com/r/grpc/cxx/~/dockerfile/).
 ## Build and run the sample
 
 ```sh
-git clone https://github.com/npclaudiu/build-grpc-cpp-service-using-docker-sample.git
-cd build-grpc-cpp-service-using-docker-sample
+git clone https://github.com/npclaudiu/grpc-cpp-docker.git
+cd grpc-cpp-docker
 docker build -t calculator .
 docker run --rm -it calculator
 ```
